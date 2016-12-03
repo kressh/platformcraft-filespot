@@ -26,6 +26,8 @@ module Filespot
         f.request :multipart
         f.request :url_encoded
         f.adapter :net_http
+        
+        f.options.timeout = 120
       end
     end
 
